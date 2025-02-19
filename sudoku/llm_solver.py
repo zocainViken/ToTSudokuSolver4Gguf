@@ -64,7 +64,7 @@ def is_valid_sudoku(board):
 
     return True
 
-class SudokuSolver:
+class LlmSudokuSolver:
     def __init__(self, board):
         self.root = TreeNode(board)  # Root node
         self.current_node = self.root
@@ -222,7 +222,7 @@ if __name__ == "__main__":
         [0, 0, 0, 0, 8, 0, 0, 7, 9]
     ]
 
-    solver = SudokuSolver(board)
+    solver = LlmSudokuSolver(board)
     solution = solver.solve_with_tot()
     print("\nFinal Solution:")
     solver.print_board(solution)
