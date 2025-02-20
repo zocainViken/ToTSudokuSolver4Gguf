@@ -88,6 +88,7 @@ You could also solve a Sudoku Puzzle with an LLM:
 ```python
 from config import MODEL_PATH
 from llama_cpp import Llama
+from sudoku.llm_solver import LlmSudokuSolver
 
 llm = Llama(
     MODEL_PATH,
